@@ -1,0 +1,121 @@
+/* FOR NAVBAR PART */
+.navbarAndSidebar {
+  background: cadetblue;
+}
+.navbarContainer {
+  display: flex;
+  color: #fff;
+  height: 80px;
+  width: 100%;
+}
+.navbarContainerWrapper {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+.navbarContainerItems {
+  display: flex;
+}
+.navbarContainerLeft {
+  display: flex;
+  align-items: center;
+}
+.navbarContainerHamburger {
+  padding: 0;
+}
+.navbarContainerLogo {
+  /* padding: 0 20px; */
+  font-size: 28px;
+  font-weight: bolder;
+}
+.navbarContainerRight {
+  padding: 0;
+}
+.navbarContainerRightItems {
+  display: flex;
+  align-items: center;
+  height: 100%;
+}
+.navbarContainerRightItem {
+  padding: 0 10px;
+  cursor: pointer;
+}
+
+/* FOR SIDEBAR PART */
+.setSidebarForToggle {
+  position: fixed;
+  height: 100vh;
+  width: 200px;
+  overflow: scroll;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  z-index: 9999;
+  padding: 40px 20px; /*This is for main width & hide in Sidebar */
+  background: #fff;
+}
+.SidebarToggleBtn {
+  border: none;
+  background: red;
+  cursor: pointer;
+}
+.SidebarItems {
+  list-style-type: none;
+}
+.SidebarItem {
+  padding: 3px 0;
+}
+.SidebarItem:hover {
+  font-size: 20px;
+}
+.link {
+  text-decoration: none;
+  color: #fff;
+  font-weight: bolder;
+}
+.activeClassNameOfSidebar {
+  font-size: 20px;
+  color: red;
+}
+.transform {
+  --tw-translate-x: 0;
+  --tw-translate-y: 0;
+  --tw-rotate: 0;
+  --tw-skew-x: 0;
+  --tw-skew-y: 0;
+  --tw-scale-x: 1;
+  --tw-scale-y: 1;
+  transform: translateX(var(--tw-translate-x)) translateY(var(--tw-translate-y))
+    rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y))
+    scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+.transition-all {
+  transition-property: all;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+}
+.duration-300 {
+  transition-duration: 300ms;
+}
+
+.translateForSidebar {
+  --tw-translate-x: 0px;
+}
+
+.translateForSidebarNeg {
+  --tw-translate-x: -100%;
+}
+
+@media (min-width: 1024px) {
+  .navbarContainerHamburger {
+    display: none;
+  }
+  .setSidebarForToggle {
+    display: none;
+  }
+}
+@media (max-width: 1023px) {
+  .navbarContainerRightItems {
+    display: none;
+  }
+}

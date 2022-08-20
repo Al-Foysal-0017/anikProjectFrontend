@@ -1,0 +1,29 @@
+.alumni__container {
+  padding: 0 3.5rem;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+@media screen and (max-width: 1200px) {
+  .alumni__container {
+    padding: 0 3rem;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .alumni__container {
+    padding: 0 2rem;
+  }
+}
+
+@media screen and (max-width: 640px) {
+  .alumni__container {
+    padding: 0 12px;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .alumni__container {
+    padding: 0 10px;
+  }
+}
